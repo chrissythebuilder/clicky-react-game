@@ -1,26 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Wrapper from "./Components/Wrapper";
+import Header from "./Components/Header";
+import Title from "./Components/Title";
+import Gamecard from "./Components/GameCard";
+import Footer from "./Components/Footer";
+import pokemon from "./pokemon.json";
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    pokemon
+  };
+
+  
+
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Wrapper>
+        <Header> Clicky Game </Header>
+        <Title>Gotta catch them all, Pokemon!</Title>
+        {this.state.pokemon.map(pokemon => (
+        <Gamecard
+            id={pokemon.id}
+            key={pokemon.id}
+            name={pokemon.name}
+            image={pokemon.image}
+            ability={pokemon.ability}
+            habitat={pokemon.habitat}
+            strength={pokemon.strength}
+            resistance={pokemon.resistance}
+        />
+        ))} 
+      </Wrapper>
     );
   }
 }

@@ -1,0 +1,12 @@
+.title {
+    text-align: center;
+    width: 100%;
+    /* border-top: 10px solid palevioletred;
+    border-bottom:  10px solid palevioletred; */
+    /* background: rgb(18, 43, 54); */
+    background: #3B4CCA;
+    padding: 30px 0;
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: .3em;
+    color: rgb(209, 249, 252)
+}
