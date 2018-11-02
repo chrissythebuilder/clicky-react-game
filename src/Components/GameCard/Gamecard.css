@@ -1,18 +1,16 @@
 .card {
     float: left;
-    /* background: rgb(17, 54, 71); */
     background: white;
     border: 10px solid rgb(17,54,71);
     text-align: center;
-    /* margin-bottom: 50px; */
     position: inline-block;
     width: 250px;
-    height: 300px;
-    margin: 30px 50px;
+    height: 260px;
+    margin: 10px 50px 30px 50px;
 }
 
 img {
-    width: 80px;
+    width: 70px;
     margin-top: 10px
 }
 

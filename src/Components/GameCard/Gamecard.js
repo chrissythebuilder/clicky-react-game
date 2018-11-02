@@ -2,7 +2,7 @@ import React from "react";
 import "./Gamecard.css";
 
 const Gamecard = props => (
-    <div className = "card"onClick ={() => props.imageShuffle(props.id, props.value)}>
+    <div className = "card" onClick ={() => props.imageShuffle(props.id, props.value)}>
         <div className = "img-container">
             <img alt={props.name} src={props.image} />
         </div>

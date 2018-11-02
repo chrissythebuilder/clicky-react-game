@@ -1,12 +1,8 @@
 .title {
     text-align: center;
     width: 100%;
-    /* border-top: 10px solid palevioletred;
-    border-bottom:  10px solid palevioletred; */
-    /* background: rgb(18, 43, 54); */
     background: #3B4CCA;
     padding: 30px 0;
-    /* font-family: 'Shrikhand', cursive; */
     font-family: 'Chelsea Market', cursive;
     letter-spacing: .2em;
     color: rgb(209, 249, 252);
