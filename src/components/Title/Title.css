@@ -6,7 +6,9 @@
     /* background: rgb(18, 43, 54); */
     background: #3B4CCA;
     padding: 30px 0;
-    font-family: 'Shrikhand', cursive;
-    letter-spacing: .3em;
-    color: rgb(209, 249, 252)
+    /* font-family: 'Shrikhand', cursive; */
+    font-family: 'Chelsea Market', cursive;
+    letter-spacing: .2em;
+    color: rgb(209, 249, 252);
+    font-weight: 800
 }
