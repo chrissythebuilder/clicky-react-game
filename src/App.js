@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Wrapper from "./Components/Wrapper";
-import Header from "./Components/Header";
-import Title from "./Components/Title";
-import Gamecard from "./Components/GameCard";
+import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
+import Title from "./components/Title";
+import GameCard from "./components/GameCard";
 import pokemon from "./pokemon.json";
 import './App.css';
 
@@ -71,7 +71,7 @@ class App extends Component {
         />
         <Title>Gotta catch 'em all!</Title>
         {this.state.images.map(pokemon => (
-        <Gamecard
+        <GameCard
             imageShuffle={()=> this.imageShuffleFn(pokemon.id)}
             id={pokemon.id}
             key={pokemon.id}
