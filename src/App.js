@@ -40,7 +40,7 @@ class App extends Component {
     if(find===0) {
       this.state.clickedImg.push(id);
       var currentScore = this.state.current + 1;
-      
+
       this.setState({
         current: currentScore,
         message: "You've done well, keep playing!",
@@ -50,7 +50,7 @@ class App extends Component {
       var topScore = this.state.top;
       if(topScore <= currentScore) {
         this.setState({
-          topScore: currentScore
+          top: currentScore
         })
         console.log(this.state.top);
         console.log(currentScore)
