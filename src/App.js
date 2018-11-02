@@ -26,14 +26,13 @@ class App extends Component {
       if (id === this.state.clickedImg[i]) {
         find = 1;
         this.setState ({
-          message: "You've done well, keep playing!"
+          message: "Aw, you were close but try again!"
         });
 
         this.setState({
-          pokemon,
+          images: pokemon,
           clickedImg: [],
           current: 0,
-          counter: 0
         })
       }
     }
@@ -41,16 +40,20 @@ class App extends Component {
     if(find===0) {
       this.state.clickedImg.push(id);
       var currentScore = this.state.current + 1;
-
+      
       this.setState({
         current: currentScore,
         message: "You've done well, keep playing!",
         images: shuffle(this.state.images)
-      })
+      });
 
       var topScore = this.state.top;
       if(topScore <= currentScore) {
-        this.setState({topScore:currentScore})
+        this.setState({
+          topScore: currentScore
+        })
+        console.log(this.state.top);
+        console.log(currentScore)
       }
 
     }
@@ -66,7 +69,7 @@ class App extends Component {
           current={this.state.current}
           top={this.state.top}
         />
-        <Title>Gotta catch them all!</Title>
+        <Title>Gotta catch 'em all!</Title>
         {this.state.images.map(pokemon => (
         <Gamecard
             imageShuffle={()=> this.imageShuffleFn(pokemon.id)}
