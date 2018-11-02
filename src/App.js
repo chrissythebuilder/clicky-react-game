@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Wrapper from "./components/Wrapper";
-import Header from "./components/Header";
-import Title from "./components/Title";
-import Gamecard from "./components/GameCard";
+import Wrapper from "./Components/Wrapper";
+import Header from "./Components/Header";
+import Title from "./Components/Title";
+import Gamecard from "./Components/GameCard";
 import pokemon from "./pokemon.json";
 import './App.css';
 
