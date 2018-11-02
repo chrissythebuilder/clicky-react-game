@@ -1,0 +1,26 @@
+.header {
+    background: rgb(17, 54, 71);
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 150px;
+}
+
+.name {
+    font-family: 'Carter One', cursive;
+    font-size: 250%;
+    padding-right: 50px
+}
+
+.current-score {
+    font-weight: 800;
+    padding-right: 50px
+}
+
+.top-score {
+    font-weight: 800
+}

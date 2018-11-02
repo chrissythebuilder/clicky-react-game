@@ -1,0 +1,30 @@
+.card {
+    float: left;
+    background: white;
+    border: 10px solid rgb(17,54,71);
+    text-align: center;
+    position: inline-block;
+    width: 250px;
+    height: 260px;
+    margin: 10px 50px 30px 50px;
+}
+
+img {
+    width: 70px;
+    margin-top: 10px
+}
+
+.card:hover {
+    transform: scale(.8)
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+li {
+    font-weight: 500;
+    font-size: 110%;
+    font-family: 'Patrick Hand', cursive;
+}
